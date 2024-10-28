@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="e0bd1c4b981d2c64563f3261d71e33537d6537a5e2db3eeaa80f3ced6c391625" size="0.200000 0.150000" />
+    <ImageTarget name="img-20241027-wa0008" size="0.200000 0.444444" />
+    <ImageTarget name="img-20241027-wa0007" size="0.200000 0.444444" />
+    <ImageTarget name="mseyitog" size="0.200000 0.259459" />
+    <ImageTarget name="Space" size="0.200000 0.204167" />
+  </Tracking>
+</QCARConfig>
