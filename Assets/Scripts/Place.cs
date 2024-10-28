@@ -1,16 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using Vuforia;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class Place : DefaultObserverEventHandler
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject carPrefab;
+    private GameObject placedCar;
+
+    protected override void OnTrackingFound()
     {
-        
+        base.OnTrackingFound();
+        if (placedCar == null)
+        {
+            PlaceObject(transform.position);
+            // placedCar = Instantiate(carPrefab, transform.position, transform.rotation);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void PlaceObject(Vector3 position)
     {
-        
+        placedCar = Instantiate(carPrefab, position, Quaternion.identity);
     }
 }
